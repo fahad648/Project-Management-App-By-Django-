@@ -1,0 +1,131 @@
+{% extends 'ProjectManagement/base.html' %}
+{% load static %}
+
+<br>
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1><strong>Project Management System by using Python Django</strong></h1>
+  <p></p>
+  <p>We have developed Project Management System by using Python Django. 
+    As we know Python Projects, are trending topics for academic python project development. So we had chosen python3 for developing Project Management System. In this project, we developed features Like  Project Assigning, etc, which reduces human efforts and increase the efficiency.</p>
+</div>
+<br>
+
+<h2 style="text-align:center">My Team</h2>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/FAHAD.jpg' %}" alt="Fahad Farooq" style="width:100%">
+      <div class="container">
+        <h2>Fahad Farooq</h2>
+        <p class="title">Creator & Founder</p>
+        <p>Aspiring Data Scientist I believe that data tells us more than just numbers, it helps us understand our users and their desires. I want to pursue data science because I want the business to use data to maximize their value
+          Sometimes I also Produced Music & Hop on that Beat as well.</p>
+        <p>ffarooq@students.uit.edu</p>
+        <a href="https://www.linkedin.com/in/fahad-farooq-81a5241b5/">
+        <p><button class="button">Contact</button></p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/ABDUL-WASSAY.jpg' %}" alt="Abdul Wassay" style="width:100%">
+      <div class="container">
+        <h2>Abdul Wassay</h2>
+        <p class="title">Creator & Founder</p>
+        <p>I am an undergraduate Software Engineering student at Usman Institute of Technology. I have backend web development skills. But, i am mostly interested in cybersecurity and my goal is to become a penetration tester. For that, i am continuously learning my craft by participating in ctfs on different platforms..</p>
+        
+        <a href="https://www.linkedin.com/in/awassay?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVM8Zjn38TAKeoExWG%2FItvw%3D%3D">
+          <p><button class="button">Contact</button></p>
+          </a>
+      </div>
+    </div>
+  </div>
+  
+
+
+</body>
+</html>
+{% endblock %}

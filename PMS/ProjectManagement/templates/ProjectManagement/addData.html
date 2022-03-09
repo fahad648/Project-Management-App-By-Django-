@@ -1,0 +1,17 @@
+{% extends 'ProjectManagement/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br>
+<br>
+<form method="POST"> 
+    {% csrf_token %}
+    {{ form.Employee_name|as_crispy_field }}
+    {{ form.Employee_id|as_crispy_field }}
+    {{ form.Employee_contact|as_crispy_field }}
+    {{ form.project_id|as_crispy_field }}
+    <br>
+    <input type="submit" value='Assign Project  'class="btn btn-primary">
+</form>
+
+{% endblock %}

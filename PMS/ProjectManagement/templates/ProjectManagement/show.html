@@ -1,0 +1,33 @@
+{% extends 'ProjectManagement/base.html' %}
+
+
+{% block content %}
+<br>
+
+    <table class="table table-hover">
+        <tr>
+            <th> Employees Name</th>
+            <th>Employees Id</th>
+            <th>Employees Contact</th>
+            <th>Project Name</th>
+            <th>Project Status</th>
+        </tr>
+    
+    {% for std in employee_list %}
+        <tr>
+            <td>{{ std.Employee_name }}</td>
+            <td>{{std.Employee_id}}</td>
+            <td>{{std.Employee_contact}}</td>
+            <td>{{std.project_id}}</td>
+            <td>{{std.emp_status}}</td>
+            <td><a href="{% url 'Emp_update' std.id %}">Edit</a>|
+            <a href="{% url 'Emp_delete' std.id %}">Delete</a></td>
+
+        </tr>
+    {% endfor %}
+
+
+<!-- WORK TO DO HERE -->
+
+    </table>
+{% endblock %}
