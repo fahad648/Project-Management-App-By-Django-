@@ -1,6 +1,17 @@
 Using Python Django Web Framework for implementing this project. 
-• Created 3 models using python Django Framework. 
-• From those three models, two should have Primary-Key and Foreign-Key relation 
-• Data is saved from web FORM, not from Django Admin site. 
-• Used SQLite database for model migration. 
-• Use Bootstrap to stylize the template
+
+
+• Created 3 Models using python Django Framework.
+
+
+• From Those Three models, two should have Primary-Key and Foreign-Key relation
+
+• Data is saved from Web FORM, not from Django Admin Site.
+
+• For this I'm Using Crispy Forms
+
+
+• Used SQLite Database for model migration.
+
+
+• Use Bootstrap to Stylize The Template
